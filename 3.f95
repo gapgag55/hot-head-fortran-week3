@@ -1,14 +1,13 @@
 program baconCode
 
 integer :: index
-character(len=100) :: str
 integer :: binary = 0
+integer :: adder = 1
+integer :: choose
 character(len=100) :: binary_string
 character(len=100) :: output = " "
 character(len=100) :: result = " "
-integer :: adder = 1
-integer :: choose
-integer :: count = 0
+character(len=100) :: str
 
 integer :: i, j, f
 
@@ -70,10 +69,10 @@ if(choose .eq. 1) then
   ! Print outcome
   print *, result
 
-! decode 
+! decode
 else
 
-  print *, "Enter decode (aaaaa aaaaA aaaAA): "
+  print *, "Enter decode (aaaaa aaaaA aaaAa): "
   read(*,'(A)') str
 
   adder = 10000
