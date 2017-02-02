@@ -76,7 +76,6 @@ else
   read(*,'(A)') str
 
   adder = 10000
-  index = 0
 
   ! Bacode to decimal
   do i = 1, len_trim(str), 6
@@ -88,7 +87,7 @@ else
       if(str(j:j) .eq. "A") then
         binary = binary + (2**((i+4)-j))
       end if
-      !
+
       adder = adder / 10
     end do
 
